@@ -1,0 +1,285 @@
+<resources>
+    <string name="app_name">Engineering Content</string>
+    <string name="select_branch">Select Branch</string>
+    <string name="select_semester">Select Semester</string>
+    <string name="welcome">Welcome</string>
+    <string name="textview">TextView</string>
+    <string name="quick_access">Quick Access</string>
+    <string name="no_items_found">No Items Found</string>
+    <string name="branch_subject_image">Branch_subject_image</string>
+
+    <string-array name="branches_array">
+        <item>Computer Science</item>
+        <item>Electronics and Communications</item>
+        <item>Electronics and Electrical</item>
+        <item>Civil</item>
+        <item>Chemical</item>
+        <item>Mechanical</item>
+        <item>MME</item>
+    </string-array>
+
+
+    <string-array name="Semester_Array">
+        <item>E-1 S-1</item>
+        <item>E-1 S-2</item>
+        <item>E-2 S-1</item>
+        <item>E-2 S-2</item>
+    </string-array>
+
+    <string-array name="Subject_Array">
+        <item>maths</item>
+        <item>IT</item>
+        <item>physics</item>
+        <item>Chemistry</item>
+        <item>Telugu</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="Cse_E1_S1">
+        <item>C&amp;LA</item>
+        <item>BEEE</item>
+        <item>PSTC</item>
+        <item>EGCD</item>
+        <item>IC</item>
+        <item>BEEE LAB</item>
+    </string-array>
+
+    <string-array name="Cse_E1_S2">
+        <item>DM</item>
+        <item>EP</item>
+        <item>OOPS</item>
+        <item>DS</item>
+        <item>MEFA</item>
+        <item>ES</item>
+    </string-array>
+    <string-array name="Cse_E2_S1">
+        <item>P&amp;S</item>
+        <item>DLD</item>
+        <item>DAA</item>
+        <item>DBMS</item>
+        <item>FLAT</item>
+    </string-array>
+
+    <string-array name="Cse_E2_S2">
+        <item>IOR</item>
+        <item>COA</item>
+        <item>DSP</item>
+        <item>WEB</item>
+        <item>CD</item>
+    </string-array>
+
+    <string-array name="Ece_E1_S1">
+        <item>DEMC</item>
+        <item>ET</item>
+        <item>EP</item>
+        <item>PDS</item>
+        <item>EP LAB</item>
+        <item>ET LAB</item>
+    </string-array>
+
+    <string-array name="Ece_E1_S2">
+        <item>MM</item>
+        <item>OOPS</item>
+        <item>EDC</item>
+        <item>NT</item>
+        <item>SS</item>
+    </string-array>
+
+    <string-array name="Ece_E2_S1">
+        <item>PRV</item>
+        <item>DLD</item>
+        <item>DSP</item>
+        <item>CS</item>
+        <item>AEC</item>
+
+
+    </string-array>
+    <string-array name="Ece_E2_S2">
+        <item>CS1</item>
+        <item>DSD</item>
+        <item>LIC</item>
+        <item>EWGM</item>
+        <item>RL</item>
+
+    </string-array>
+
+    <string-array name="CE_E1_S1">
+        <item>EC</item>
+        <item>DEMC</item>
+        <item>PDS</item>
+        <item>EGCD</item>
+    </string-array>
+
+    <string-array name="CE_E1_S2">
+        <item>EP</item>
+        <item>MM</item>
+        <item>BEEE</item>
+        <item>EM</item>
+        <item>EG</item>
+        <item>ES</item>
+    </string-array>
+
+    <string-array name="CE_E2_S1">
+        <item>MEFA</item>
+        <item>BMC</item>
+        <item>CT</item>
+        <item>MOF</item>
+        <item>MOM-1</item>
+        <item>IC</item>
+    </string-array>
+
+    <string-array name="CE_E2_S2">
+        <item>HE</item>
+        <item>MOM-2</item>
+        <item>SM</item>
+        <item>SA</item>
+        <item>SURV-2</item>
+        <item>WRE</item>
+        <item>CT LAB</item>
+    </string-array>
+
+    <string-array name="EEE_E1_S1">
+        <item>DEMC</item>
+        <item>EP</item>
+        <item>EGCD</item>
+        <item>ET</item>
+        <item>PDS</item>
+    </string-array>
+
+    <string-array name="EEE_E1_S2">
+        <item>MM</item>
+        <item>DLD</item>
+        <item>EDC</item>
+        <item>NT</item>
+        <item>AI</item>
+        <item>ENGLISH</item>
+    </string-array>
+
+    <string-array name="EEE_E2_S1">
+        <item>P&amp;RV</item>
+        <item>AEC</item>
+        <item>OOPS</item>
+        <item>SS</item>
+        <item>EM</item>
+    </string-array>
+
+    <string-array name="EEE_E2_S2">
+        <item>PS-1</item>
+        <item>ML</item>
+        <item>CS</item>
+        <item>LIC</item>
+        <item>PE</item>
+    </string-array>
+    <string-array name="CHE_E1_S1">
+        <item>DEMC</item>
+        <item>CE</item>
+        <item>OC</item>
+        <item>SM</item>
+        <item>English</item>
+        <item>Biology</item>
+    </string-array>
+    <string-array name="CHE_E1_S2">
+        <item>MM</item>
+        <item>EP</item>
+        <item>CPC</item>
+        <item>FM</item>
+        <item>PDS</item>
+        <item>EGCD</item>
+    </string-array>
+    <string-array name="CHE_E2_S1">
+        <item>Calculus</item>
+        <item>MT</item>
+        <item>Thermodynamics-I</item>
+        <item>HT</item>
+        <item>MUO</item>
+        <item>MEFA</item>
+    </string-array>
+
+    <string-array name="CHE_E2_S2">
+        <item>BEEE</item>
+        <item>OOPS</item>
+        <item>CRE-1</item>
+        <item>MTO-1</item>
+        <item>TD-2</item>
+    </string-array>
+
+    <string-array name="Mech_E1_S1">
+        <item>DEMC</item>
+        <item>EP</item>
+        <item>BEEE</item>
+        <item>EC</item>
+        <item>ENGLISH</item>
+    </string-array>
+
+    <string-array name="Mech_E1_S2">
+        <item>MM</item>
+        <item>EM</item>
+        <item>MSM</item>
+        <item>PDS</item>
+        <item>EGCD</item>
+    </string-array>
+
+    <string-array name="Mech_E2_S1">
+        <item>TC</item>
+        <item>KOM</item>
+        <item>Thermodynamics</item>
+        <item>MOS</item>
+        <item>MP</item>
+    </string-array>
+
+    <string-array name="Mech_E2_S2">
+        <item>DME</item>
+        <item>DOM</item>
+        <item>FMHM</item>
+        <item>MCMT</item>
+        <item>PS</item>
+        <item>IC</item>
+    </string-array>
+
+    <string-array name="MME_E1_S1">
+        <item>DEMC</item>
+        <item>EP</item>
+        <item>EM</item>
+        <item>PDS</item>
+        <item>EGCD</item>
+    </string-array>
+
+    <string-array name="MME_E1_S2">
+        <item>MM</item>
+        <item>EC</item>
+        <item>BEEE</item>
+        <item>MT</item>
+        <item>PM</item>
+        <item>IC</item>
+    </string-array>
+
+    <string-array name="MME_E2_S1">
+        <item>TC</item>
+        <item>MPEM</item>
+        <item>PTHT</item>
+        <item>MBTM</item>
+        <item>EP</item>
+        <item>ES</item>
+    </string-array>
+
+    <string-array name="MME_E2_S2">
+        <item>DME</item>
+        <item>DOM</item>
+        <item>FMHM</item>
+        <item>MCMT</item>
+        <item>PS</item>
+        <item>IC</item>
+    </string-array>
+
+
+    <string-array name="SixChapters">
+        <item>Unit-1</item>
+        <item>Unit-2</item>
+        <item>Unit-3</item>
+        <item>Unit-4</item>
+        <item>Unit-5</item>
+        <item>Unit-6</item>
+    </string-array>
+
+
+</resources>

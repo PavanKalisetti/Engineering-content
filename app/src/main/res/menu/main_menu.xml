@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Add File"
+        android:id="@+id/AddFile"
+        app:showAsAction="never" />
+    <item
+        android:title="LogOut"
+        android:id="@+id/LogOut"
+        app:showAsAction="never"/>
+    <item
+        android:title="Attendance"
+        android:id="@+id/Attendance_CRS_portal"
+        app:showAsAction="never"/>
+</menu>

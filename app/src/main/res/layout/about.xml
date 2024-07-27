@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:background="@color/background_light_mode">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By: "
+        android:layout_above="@+id/AboutRelative"
+        android:textColor="#0B22BC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="13dp"
+        android:layout_marginStart="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/AboutRelative">
+
+        <TextView
+            android:id="@+id/DevelopedBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="CSE E1 RGUKT NUZVID"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SendContentId"
+            android:layout_below="@+id/DevelopedBy"
+            android:text="help us in collecting content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="monospace"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SendContentBtn"
+            android:layout_below="@+id/SendContentId"
+            android:layout_centerHorizontal="true"
+            android:text="Send Content"
+            android:fontFamily="monospace"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#7a8afa"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

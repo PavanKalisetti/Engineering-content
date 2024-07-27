@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application
+        android:name=".SaveFirebaseData"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EngineeringContent"
+        tools:targetApi="31">
+        <activity
+            android:name=".AttendanceCRsPortal"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.EngineeringContent.branchTheme" />
+        <activity
+            android:name=".Attendence"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+
+<!--            test ads metadata-->
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--            android:value="ca-app-pub-3940256099942544~3347511713" />-->
+
+<!--            realtime ads metadata admob-->
+                <meta-data
+                    android:name="com.google.android.gms.ads.APPLICATION_ID"
+                    android:value="ca-app-pub-4325635588090851~7561026982" />
+        <activity
+            android:name=".Canteen"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ClassContent"
+            android:exported="false" />
+        <activity
+            android:name=".Metallurgy"
+            android:exported="false"
+            android:parentActivityName=".Branch"
+            android:theme="@style/Theme.EngineeringContent.branchTheme" />
+        <activity
+            android:name=".Mechanical"
+            android:exported="false"
+            android:parentActivityName=".Branch"
+            android:theme="@style/Theme.EngineeringContent.branchTheme" />
+        <activity
+            android:name=".Chemical"
+            android:exported="false"
+            android:parentActivityName=".Branch"
+            android:theme="@style/Theme.EngineeringContent.branchTheme" />
+        <activity
+            android:name=".Electrical_and_Electronics"
+            android:exported="false"
+            android:parentActivityName=".Branch"
+            android:theme="@style/Theme.EngineeringContent.branchTheme" />
+        <activity
+            android:name=".Notes_db"
+            android:exported="false"
+            android:parentActivityName=".Chapters" />
+        <activity
+            android:name=".Civil"
+            android:exported="false"
+            android:parentActivityName=".Branch"
+            android:theme="@style/Theme.EngineeringContent.branchTheme" />
+        <activity
+            android:name=".ComingSoon"
+            android:exported="false"
+            android:parentActivityName=".Branch" />
+        <activity
+            android:name=".PdfView"
+            android:exported="false"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".About"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminPanel"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PdfViewer"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Content"
+            android:exported="false" />
+        <activity
+            android:name=".Chapters"
+            android:exported="false"
+            android:parentActivityName=".ComputerScience" />
+        <activity
+            android:name=".Electronics_and_Communications"
+            android:exported="false"
+            android:parentActivityName=".Branch"
+            android:theme="@style/Theme.EngineeringContent.branchTheme" />
+        <activity
+            android:name=".ComputerScience"
+            android:exported="false"
+            android:parentActivityName=".Branch"
+            android:theme="@style/Theme.EngineeringContent.branchTheme" />
+        <activity
+            android:name=".Branch"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SigninAuth"
+            android:exported="true"
+            android:theme="@style/Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

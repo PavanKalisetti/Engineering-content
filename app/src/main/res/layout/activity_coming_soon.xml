@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComingSoon"
+    android:background="@color/background_light_mode">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ComingSoonRelativeLayout"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comingsoonTxt"
+            android:text="Coming soon...."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/helpcontenttxt"
+            android:text="help us in collecting content"
+            android:layout_below="@+id/comingsoonTxt"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="monospace"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendContentToAdmin"
+            android:layout_below="@+id/helpcontenttxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="send content"
+            android:textColor="@color/black"
+            android:backgroundTint="#7a8afa"/>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shape"
+        android:src="@drawable/shape"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeTxt"
+        android:text="Welcome to\n Engineering content❤️"
+        android:layout_below="@+id/shape"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/BooksImage"
+        android:src="@drawable/books"
+        android:layout_below="@+id/welcomeTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sbtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BooksImage"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Guest"
+        android:layout_below="@+id/sbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/guest"
+                android:layout_marginStart="5dp"
+                android:id="@+id/GuestId"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guest"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="#737070"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/GuestId"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

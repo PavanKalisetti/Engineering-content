@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mainActTopView">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/WelcomeTxt"
+                    android:text="@string/welcome"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/ProfilePic"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_toStartOf="@+id/MenuBtn"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/MenuBtn"
+                    android:src="@drawable/menu_btn_white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"/>
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <com.engineeringcontent.org.TypeWriter
+                android:id="@+id/TxtTyping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="@string/welcome"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_below="@+id/mainActTopView"
+                android:textColor="@color/yellow"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/QuickAccess"
+                android:text="@string/quick_access"
+                android:layout_below="@id/TxtTyping"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/parentCardView"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/QuickAccess"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#191818"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/no_items_found"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/MainRecView"
+                android:layout_below="@+id/parentCardView"
+                android:layout_marginTop="20dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
